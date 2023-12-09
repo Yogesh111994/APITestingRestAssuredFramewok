@@ -49,6 +49,7 @@ public class GetUserTest extends BaseTest {
 		                      .then().log().all()
 		                                .assertThat()
 		                                        . statusCode(APIHttpStatus.Ok_200.getCode());
+		System.out.println("Status Code is verified");
 		                                        	
 	}
 	
