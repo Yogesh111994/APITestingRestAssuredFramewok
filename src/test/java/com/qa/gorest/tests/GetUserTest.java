@@ -28,14 +28,14 @@ public class GetUserTest extends BaseTest {
 		                                .assertThat()
 		                                        . statusCode(APIHttpStatus.Ok_200.getCode());	
 	}
-	@Test(priority=1, enabled=false, description="this test is in progress....")
+	@Test(priority=1)
 	public void getspecificUser() {
-		restClient.get(GOREST_ENDPOINT+"/"+"4885695",true, true)
+		restClient.get(GOREST_ENDPOINT+"/"+"5825411",true, true)
 		                      .then().log().all()
 		                                .assertThat()
 		                                        . statusCode(APIHttpStatus.Ok_200.getCode())
 		                                                .and()
-		                                                      .body("id", equalTo(4885695));
+		                                                      .body("id", equalTo(5825411));
 		
 	}
 	
