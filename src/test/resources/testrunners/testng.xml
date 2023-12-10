@@ -4,7 +4,7 @@
 <suite name="TestNG Regression Suite" verbose="4" thread-count="1"
 	parallel="tests">
 
-	<!--<test name="Amadeus Auth2.0 Test">
+	<test name="Amadeus Auth2.0 Test">
 		<parameter name="BaseURI" value="https://test.api.amadeus.com" />
 		<parameter name="grantTpye" value="client_credentials" />
 		<parameter name="clientId" value="ywU9W4ZXI1EGpZyAnAXnA3JpcSbteKon" />
@@ -12,14 +12,14 @@
 		<classes>
 			<class name="com.qa.gorest.tests.AmadeusAuth2Test" />
 		</classes>
-	</test>-->
+	</test>
 
-<!--	<test name="Go Rest API">
+	<test name="Go Rest API">
 		<parameter name="BaseURI" value="https://gorest.co.in" />
 		<classes>
 			<class name="com.qa.gorest.tests.GetUserTest" />
 		</classes>
-	</test>-->
+	</test>
 	
 	<test name="Go Rest Schema Validation">
 		<parameter name="BaseURI" value="https://gorest.co.in" />
@@ -28,25 +28,25 @@
 		</classes>
 	</test>
 
-	<!--<test name="Post Rest API">
+	<test name="Post Rest API">
 		<parameter name="BaseURI" value="https://gorest.co.in" />
 		<classes>
 			<class name="com.qa.gorest.tests.CreateUserTest" />
 		</classes>
-	</test>-->
+	</test>
 
-<!--	<test name="Circuit API">
+	<test name="Circuit API">
 		<parameter name="BaseURI" value="https://ergast.com" />
 		<classes>
 			<class name="com.qa.gorest.tests.CircuitUser" />
 		</classes>
-	</test>-->
+	</test>
 
-<!--	<test name="Request Response API">
+	<test name="Request Response API">
 		<parameter name="BaseURI" value="https://reqres.in" />
 		<classes>
 			<class name="com.qa.gorest.tests.ReqResTest" />
 		</classes>
-	</test>-->
+	</test>
 
 </suite>
