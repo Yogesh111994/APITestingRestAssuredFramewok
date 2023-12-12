@@ -20,6 +20,7 @@ public class BaseTest {
 	public static String AMADEUS_TOKEN_ENDPOINT="/v1/security/oauth2/token";
 	public static String AMADEUS_FLIGHT_INFO_ENDPOINT="/v1/shopping/flight-destinations";
 	
+	
 	protected ConfigurationManager config;
 	protected Properties prop;
 	protected RestClient restClient;

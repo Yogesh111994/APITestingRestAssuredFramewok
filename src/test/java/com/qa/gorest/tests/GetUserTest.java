@@ -28,7 +28,7 @@ public class GetUserTest extends BaseTest {
 		                                .assertThat()
 		                                        . statusCode(APIHttpStatus.Ok_200.getCode());	
 	}
-	@Test(priority=1)
+	@Test(priority=1, enabled=true, description="this test is in progress....")
 	public void getspecificUser() {
 		restClient.get(GOREST_ENDPOINT+"/"+"5825411",true, true)
 		                      .then().log().all()
