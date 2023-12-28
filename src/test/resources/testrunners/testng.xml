@@ -55,5 +55,4 @@
 			<class name="com.qa.gorest.tests.UpdateUserTest" />
 		</classes>
 	</test>
-
 </suite>
