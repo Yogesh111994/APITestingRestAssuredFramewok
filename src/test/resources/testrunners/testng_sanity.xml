@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" verbose="4" thread-count="1"
+	parallel="tests">
+
+	<test name="Amadeus Auth2.0 Test">
+		<parameter name="BaseURI" value="https://test.api.amadeus.com" />
+		<parameter name="grantTpye" value="client_credentials" />
+		<parameter name="clientId" value="ywU9W4ZXI1EGpZyAnAXnA3JpcSbteKon" />
+		<parameter name="clientSecret" value="S7bL3hO6wO9r7Ix6" />
+		<classes>
+			<class name="com.qa.gorest.tests.AmadeusAuth2Test" />
+		</classes>
+	</test>
+
+	<test name="Post Rest API">
+		<parameter name="BaseURI" value="https://gorest.co.in" />
+		<classes>
+			<class name="com.qa.gorest.tests.CreateUserTest" />
+		</classes>
+	</test>
+
+</suite>
