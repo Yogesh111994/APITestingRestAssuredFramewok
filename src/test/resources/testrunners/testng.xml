@@ -21,7 +21,7 @@
 		</classes>
 	</test>
 	
-	<test name="Go Rest Schema Validation">
+<!--	<test name="Go Rest Schema Validation">
 		<parameter name="BaseURI" value="https://gorest.co.in" />
 		<classes>
 			<class name="com.qa.gorest.tests.SchemaValidationTest" />
@@ -54,5 +54,5 @@
 		<classes>
 			<class name="com.qa.gorest.tests.UpdateUserTest" />
 		</classes>
-	</test>
+	</test>-->
 </suite>

@@ -27,7 +27,7 @@ public class RestClient {
 	public RestClient(Properties prop,String BaseURI) {
 		specBuilder = new RequestSpecBuilder();
 		this.prop=prop;
-		this.BaseURI=BaseURI;
+		this.BaseURI=BaseURI; 
 	}
 
 	public void addAuthorization() {
@@ -36,6 +36,8 @@ public class RestClient {
 		isAuthorizationHeaderAdded=true;
 		}
 	}
+	
+	
 	
 	private void setRequestContent(String contentType) {
 	     switch (contentType.toLowerCase()) {
@@ -65,7 +67,7 @@ public class RestClient {
 		}
 		return specBuilder.build();
 	}
-
+ 
 	private RequestSpecification createRequestSpec(Map<String, String> headersMap,boolean includeAuth) {
 		specBuilder.setBaseUri(BaseURI);
 		if(includeAuth) {
